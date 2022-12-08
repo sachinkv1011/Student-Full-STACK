@@ -5,11 +5,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StudentAddComponent } from './student-add/student-add.component';
+import { ViewAllComponent } from './view-all/view-all.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StudentAddComponent
+    StudentAddComponent,
+    ViewAllComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,43 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-3">
+                <h1 class="text-center">Search Student</h1>
+                <div class="card">
+                    <div class="card-body">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Admission Number</label>
+                    <input name="admno" [(ngModel)]="admno" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="readValue()" class="btn btn-outline-success">Search</button>
+                </div>
+            </div>
+            <div class="row mt-3" *ngFor="let i of stud">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Name</label>
+                    <input type="text" class="form-control" value="{{i.name}}">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Admission No</label>
+                    <input value="{{i.admno}}" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Roll No</label>
+                    <input value="rollno" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">College</label>
+                    <input value="{{i.college}}" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
+                    
+                    <button class="btn btn-outline-danger ">Delete</button>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
